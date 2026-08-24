@@ -1,0 +1,118 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram id="service-request-workflow" name="Service Request Workflow">
+    <mxGraphModel dx="2277" dy="1533" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=29;fontStyle=1;" value="Service Request Workflow" vertex="1">
+          <mxGeometry height="40" width="450" x="360" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;fontSize=14;" value="Citizen Submits Service Request" vertex="1">
+          <mxGeometry height="60" width="270" x="450" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="tracking" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="System Generates Tracking ID" vertex="1">
+          <mxGeometry height="60" width="270" x="450" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="review" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="Municipal Officer Reviews Request" vertex="1">
+          <mxGeometry height="60" width="270" x="450" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="sufficient" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=14;" value="Information Sufficient?" vertex="1">
+          <mxGeometry height="100" width="180" x="495" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="moreinfo" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="Request Additional Information" vertex="1">
+          <mxGeometry height="60" width="240" x="120" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="citizeninfo" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="Citizen Provides Missing Information" vertex="1">
+          <mxGeometry height="60" width="240" x="120" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="department" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="Assign Responsible Department" vertex="1">
+          <mxGeometry height="60" width="270" x="450" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="officer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="Assign Officer / Field Team" vertex="1">
+          <mxGeometry height="60" width="270" x="450" y="645" as="geometry" />
+        </mxCell>
+        <mxCell id="progress" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="Work In Progress" vertex="1">
+          <mxGeometry height="60" width="270" x="450" y="745" as="geometry" />
+        </mxCell>
+        <mxCell id="ontime" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=14;" value="Completed Within Expected Time?" vertex="1">
+          <mxGeometry height="110" width="220" x="475" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="delay" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="Record Delay Reason" vertex="1">
+          <mxGeometry height="60" width="220" x="820" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="supervisor" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="Supervisor Reviews Delayed Request" vertex="1">
+          <mxGeometry height="60" width="220" x="820" y="985" as="geometry" />
+        </mxCell>
+        <mxCell id="continue" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="Continue Required Work" vertex="1">
+          <mxGeometry height="60" width="220" x="820" y="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="resolution" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="Add Resolution Details and Evidence" vertex="1">
+          <mxGeometry height="60" width="270" x="450" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="resolved" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="Mark Request as Resolved" vertex="1">
+          <mxGeometry height="60" width="270" x="450" y="1130" as="geometry" />
+        </mxCell>
+        <mxCell id="notify" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="Notify Citizen" vertex="1">
+          <mxGeometry height="60" width="270" x="450" y="1230" as="geometry" />
+        </mxCell>
+        <mxCell id="feedback" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;fontSize=14;" value="Citizen Provides Feedback" vertex="1">
+          <mxGeometry height="60" width="270" x="450" y="1330" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=14;" target="tracking">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="tracking" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=14;" target="review">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="review" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=14;" target="sufficient">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="sufficient" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=14;" target="moreinfo" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="moreinfo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=14;" target="citizeninfo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="citizeninfo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=14;" target="department">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="sufficient" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=14;" target="department" value="Yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="department" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=14;" target="officer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="officer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=14;" target="progress">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="progress" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=14;" target="ontime">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="ontime" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=14;" target="resolution" value="Yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="ontime" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=14;" target="delay" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="delay" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=14;" target="supervisor">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="supervisor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=14;" target="continue">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="continue" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=14;" target="resolution">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="resolution" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=14;" target="resolved">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="resolved" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=14;" target="notify">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="notify" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=14;" target="feedback">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

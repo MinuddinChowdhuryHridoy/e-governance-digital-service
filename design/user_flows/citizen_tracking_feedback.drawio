@@ -1,0 +1,86 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="citizen-tracking-feedback" name="Citizen Tracking and Feedback">
+    <mxGraphModel dx="1229" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=24;fontStyle=1;" value="User Flow 2: Citizen Tracks a Request and Gives Feedback" vertex="1">
+          <mxGeometry height="40" width="600" x="300" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;fontSize=19;" value="Citizen Dashboard" vertex="1">
+          <mxGeometry height="55" width="260" x="455" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="open" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=19;" value="Open My Requests / Track Request" vertex="1">
+          <mxGeometry height="60" width="260" x="455" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="select" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=19;" value="Select Request" vertex="1">
+          <mxGeometry height="55" width="260" x="455" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="details" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=19;" value="View Request Details&#xa;Status • Department • Progress • Delay Information" vertex="1">
+          <mxGeometry height="80" width="350" x="410" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="resolved" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=19;" value="Request Resolved?" vertex="1">
+          <mxGeometry height="100" width="200" x="485" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="wait" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=19;" value="Continue Tracking&#xa;Receive Status Notifications" vertex="1">
+          <mxGeometry height="70" width="250" x="100" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="resolution" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=19;" value="View Resolution Details / Evidence" vertex="1">
+          <mxGeometry height="60" width="260" x="455" y="675" as="geometry" />
+        </mxCell>
+        <mxCell id="feedback" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=19;" value="Select Provide Feedback" vertex="1">
+          <mxGeometry height="60" width="250" x="800" y="675" as="geometry" />
+        </mxCell>
+        <mxCell id="form" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=19;" value="Rate Service and Add Comment" vertex="1">
+          <mxGeometry height="60" width="250" x="800" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="submit" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=19;" value="Submit Feedback" vertex="1">
+          <mxGeometry height="60" width="250" x="800" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;fontSize=19;fontStyle=1;" value="Feedback Confirmation" vertex="1">
+          <mxGeometry height="60" width="250" x="800" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=19;" target="open">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="open" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=19;" target="select">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="select" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=19;" target="details">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="details" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=19;" target="resolved">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="resolved" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=19;" target="wait" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;entryX=-0.003;entryY=0.392;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=19;" target="details">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="535" />
+              <mxPoint x="210" y="416.33" />
+            </Array>
+            <mxPoint x="207" y="535" as="sourcePoint" />
+            <mxPoint x="380" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="resolved" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=19;" target="resolution" value="Yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="resolution" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=19;" target="feedback">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="feedback" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=19;" target="form">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="form" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=19;" target="submit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="submit" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=19;" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,112 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="officer-processing-flow" name="Officer Request Processing">
+    <mxGraphModel dx="1690" dy="1160" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=27;fontStyle=1;" value="User Flow 3: Municipal Officer Processes a Request" vertex="1">
+          <mxGeometry height="40" width="580" x="310" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;fontSize=21;" value="Officer Dashboard" vertex="1">
+          <mxGeometry height="55" width="260" x="455" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="assigned" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=21;" value="Open Assigned Request" vertex="1">
+          <mxGeometry height="55" width="260" x="455" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="review" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=21;" value="Review Request Details&#xa;Category • Description • Location • Evidence" vertex="1">
+          <mxGeometry height="80" width="350" x="410" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="enough" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=21;" value="Information Sufficient?" vertex="1">
+          <mxGeometry height="100" width="200" x="485" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="clarify" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=21;" value="Request Additional Information" vertex="1">
+          <mxGeometry height="65" width="250" x="100" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="assign" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=21;" value="Assign Officer / Field Team" vertex="1">
+          <mxGeometry height="60" width="260" x="455" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="progress" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=21;" value="Update Status to In Progress&#xa;Add Progress Notes" vertex="1">
+          <mxGeometry height="70" width="260" x="455" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="delay" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=21;" value="Work Delayed?" vertex="1">
+          <mxGeometry height="100" width="200" x="485" y="775" as="geometry" />
+        </mxCell>
+        <mxCell id="reason" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=21;" value="Record Delay Reason&#xa;Notify / Escalate if Required" vertex="1">
+          <mxGeometry height="70" width="250" x="100" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="complete" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=21;" value="Work Completed" vertex="1">
+          <mxGeometry height="60" width="250" x="800" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="resolution" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=21;" value="Add Resolution Details&#xa;Upload Resolution Evidence" vertex="1">
+          <mxGeometry height="70" width="250" x="800" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="resolved" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=21;fontStyle=1;" value="Mark Request as Resolved" vertex="1">
+          <mxGeometry height="60" width="250" x="800" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="notify" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;fontSize=21;" value="System Notifies Citizen" vertex="1">
+          <mxGeometry height="60" width="250" x="800" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=21;" target="assigned">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="assigned" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=21;" target="review">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="review" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=21;" target="enough">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="enough" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=21;" target="clarify" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;exitX=0.713;exitY=0.031;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.625;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=21;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="278.29" y="328" />
+            </Array>
+            <mxPoint x="278.25" y="420.015" as="sourcePoint" />
+            <mxPoint x="410" y="328" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="enough" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=21;" target="assign" value="Yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="assign" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=21;" target="progress">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="progress" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=21;" target="delay">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="delay" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=21;" target="reason" value="Yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=21;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="256.04" y="788.07" />
+              <mxPoint x="256.04" y="680" />
+            </Array>
+            <mxPoint x="258" y="788.0588235294119" as="sourcePoint" />
+            <mxPoint x="456" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="delay" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=21;" target="complete" value="No">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="820" />
+              <mxPoint x="710" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="complete" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=21;" target="resolution">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="resolution" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=21;" target="resolved">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="resolved" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=21;" target="notify">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

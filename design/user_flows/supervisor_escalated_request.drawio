@@ -1,0 +1,77 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="supervisor-escalation-flow" name="Supervisor Escalated Request Flow">
+    <mxGraphModel dx="1502" dy="1031" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=23;fontStyle=1;" value="User Flow 4: Supervisor Handles an Escalated Request" vertex="1">
+          <mxGeometry height="40" width="590" x="305" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;fontSize=17;" value="Supervisor Dashboard" vertex="1">
+          <mxGeometry height="55" width="260" x="455" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="open" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="Open Delayed / Escalated Requests" vertex="1">
+          <mxGeometry height="60" width="260" x="455" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="select" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="Select Escalated Request" vertex="1">
+          <mxGeometry height="55" width="260" x="455" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="review" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="Review Request Details&#xa;Delay Reason • Status History • Assigned Officer / Team" vertex="1">
+          <mxGeometry height="85" width="390" x="390" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="action" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=17;" value="Supervisor Action Needed?" vertex="1">
+          <mxGeometry height="100" width="200" x="485" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="monitor" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="Keep Current Assignment&#xa;Continue Monitoring" vertex="1">
+          <mxGeometry height="70" width="250" x="100" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="choose" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="Choose Supervisor Action&#xa;Reassign • Raise Priority • Request Update" vertex="1">
+          <mxGeometry height="80" width="280" x="445" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="note" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="Add Supervisor Note / Instruction" vertex="1">
+          <mxGeometry height="60" width="250" x="800" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="update" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" value="Update Request and Notify Officer / Team" vertex="1">
+          <mxGeometry height="65" width="250" x="800" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="continue" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;fontSize=17;fontStyle=1;" value="Request Returns to Processing Workflow" vertex="1">
+          <mxGeometry height="65" width="250" x="800" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=17;" target="open">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="open" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=17;" target="select">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="select" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=17;" target="review">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="review" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=17;" target="action">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="action" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=17;" target="monitor" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="monitor" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=17;" target="review">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="225" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="action" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=17;" target="choose" value="Yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="choose" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=17;" target="note">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="note" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=17;" target="update">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="update" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=17;" target="continue">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
